@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/****************************** Header *************************/
+    header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/****************************** Navigation *************************/
+nav {
+    background-color: #666;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+.active-page {
+    text-decoration: underline;
+    color: black;
+}
+
+
+
+
+/****************************** Main *************************/
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:30px;
+}
+
+.flex-item {
+    flex: 1;
+    flex-basis: 300px;
+    height: stretch;
+    width: 50%;
+    text-align: center;
+}
+
+img {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+
+}
+
+
+/****************************** Text *************************/
+
+h1 {
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h2{
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+
+.btn-csv {
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: dodgerblue;
+}
+
+.info-text {
+    text-align: left;
+}
+
+p {
+    font-weight: bold;
+}
+
+.mail{
+    font-size: 130%;
+}
+
+
+/****************************** Footer *************************/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
