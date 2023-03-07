@@ -1,15 +1,14 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: lightblue;
+    background-color: #1a1b1e;
 }
 
 /****************************** Header *************************/
-    header {
+header {
     background-color: #333;
     padding: 20px;
     text-align: center;
@@ -77,6 +76,7 @@ main {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+    flex-grow:1;
 }
 
 
@@ -111,9 +111,10 @@ h1 {
     text-align: center;
 }
 
-h2{
+h2 {
     margin-top: 10px;
     margin-bottom: 3px;
+    color: #fff;
 }
 
 .btn-csv {
@@ -140,7 +141,7 @@ h2{
 
 p {
     font-weight: 300;
-    color: black;
+    color: #CDCDCD;
 }
 
 .mail {
@@ -148,12 +149,20 @@ p {
     color: darkslategray
 }
 
+.mail p{
+    font-size: 80%;
+    margin-top: 0;
+}
+
 
 /****************************** Footer *************************/
 footer {
     background-color: #333;
     padding: 10px;
-    margin-top: auto;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: 40px;
 }
 
     footer p {

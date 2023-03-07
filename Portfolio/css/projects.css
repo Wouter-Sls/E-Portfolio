@@ -1,11 +1,10 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: lightblue;
+    background-color: #1a1b1e;
 }
 
 /****************************** Header *************************/
@@ -47,11 +46,11 @@ nav ul li a:hover {
 }
 
 nav ul li a:after {
-    content:"";
+    content: "";
     position: absolute;
     background-color: white;
     height: 3px;
-    bottom:-6px;
+    bottom: -6px;
     left:0;
     width: 0;
     transition: 0.3s;
@@ -71,22 +70,25 @@ nav ul li a:hover:after {
 
 /****************************** Main *************************/
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
+main{
+    flex-grow: 1;
 }
 
-.flex-item {
-    flex: 1;
-    flex-basis: 300px;
-    height: stretch;
-    width: 50%;
-    margin: 25px 10px;
-    padding: 10px;
+.grid-container {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    margin: 12px;
+}
+
+
+
+.grid-item {
+    padding: 0.5em;
     align-items: center;
     text-align: center;
+    margin: 20px;
 }
+
 
 /****************************** Text *************************/
 h1 {
@@ -127,7 +129,7 @@ p {
     margin-bottom: 10px;
     text-align: left;
     font-weight: 300;
-    color: black;
+    color: #CDCDCD;
 }
 
 .btn {
@@ -143,20 +145,52 @@ p {
     text-align: center;
     line-height: normal;
     border-radius: 50px;
-    background-color: darkslategray
+    background-color: darkslategray;
+    font-family: inherit
 }
-
-
-
 
 /****************************** Footer *************************/
 footer {
     background-color: #333;
     padding: 10px;
-    margin-top: auto;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: 40px;
 }
 
     footer p {
         color: #fff;
         text-align: center;
     }
+
+/***************************** Media queries **********************/
+@media only screen and (max-width:1285px) and (min-width: 900px) {
+    .grid-container {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50% 50%;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: 100%;
+        grid-template-rows: 33.33% 33.33% 33.33%;
+    }
+
+    img {
+        height: 195px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 100%;
+        grid-template-rows: 33.33% 33.33% 33.33%;
+    }
+
+    img {
+        height: 170px;
+    }
+}
+
