@@ -172,6 +172,16 @@ p {
     margin-top: 0;
 }
 
+.mail-text {
+    color: #fff;
+    text-decoration: none;
+}
+
+    .mail-text:hover {
+        color: mediumseagreen;
+        text-decoration: underline;
+    }
+
 
 /****************************** Footer *************************/
 footer {
