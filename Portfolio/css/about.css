@@ -134,6 +134,10 @@ h2 {
     background-color: darkslategray
 }
 
+.btn-csv:hover {
+    background-color: mediumseagreen;
+}
+
 
 .info-text {
     text-align: left;
@@ -144,9 +148,23 @@ p {
     color: #CDCDCD;
 }
 
+.linkedin {
+    font-size: 130%;
+    color: darkslategray;
+    margin-right: 15px;
+}
+
+.linkedin:hover {
+    color: mediumseagreen;
+}
+
 .mail {
     font-size: 130%;
     color: darkslategray
+}
+
+.mail:hover {
+    color: mediumseagreen;
 }
 
 .mail p{

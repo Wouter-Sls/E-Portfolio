@@ -149,6 +149,10 @@ p {
     font-family: inherit
 }
 
+.btn:hover {
+    background-color: mediumseagreen;
+}
+
 /****************************** Footer *************************/
 footer {
     background-color: #333;
